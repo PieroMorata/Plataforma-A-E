@@ -1,7 +1,33 @@
 .bg-navegacion{
-    background-color: #3D7EDB;
+    background-color: #035E7B;
 }
 
 .navigation-font{
-    color: #FCD000;
+    color: white;
 }
+
+.imagen_superior{
+    height: 100px;
+    background-image: url("https://trabajosocial.uc.cl/images/portadas/portada2.jpg");
+}
+
+.inicio_1{
+    height: 200px;
+    background-color: #B64E9B;
+}
+
+.inicio_2{
+    height: 200px;
+    background-color: white;
+}
+
+.inicio_3{
+    height: 200px;
+    background-color: #4ACAB9;
+}
+
+.inicio_4{
+    height: 200px;
+    background-color: white;
+}
+
