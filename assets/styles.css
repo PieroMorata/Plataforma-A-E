@@ -11,9 +11,10 @@
     background-image: url("https://trabajosocial.uc.cl/images/portadas/portada2.jpg");
 }
 
-.inicio_1{
+.encabezado_inicio{
     height: 200px;
     background-color: #B64E9B;
+    color: white;
 }
 
 .inicio_2{
