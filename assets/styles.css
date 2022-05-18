@@ -1,3 +1,7 @@
+h3{
+    color: white;
+}
+
 .bg-navegacion{
     background-color: #035E7B;
 }
@@ -17,8 +21,10 @@
     color: white;
 }
 
+/* Index */
+
 .inicio_2{
-    height: 200px;
+    height: 800px;
     background-color: white;
 }
 
@@ -32,3 +38,42 @@
     background-color: white;
 }
 
+/* Bibliografía */
+
+.cat1{
+    background-color: #B64E9B;
+    height: 50px;
+}
+
+.cat2{
+    background-color: #F0CC42;
+}
+
+.cat3{
+    background-color: #4ACAB9;
+}
+
+.cat4{
+    background-color: #EA872D;
+}
+
+.cat5{
+    background-color: #6666CC;
+}
+
+/* Contenidos */
+
+.contenidos1{
+    background-color: white;
+    height: 100px;    
+}
+
+.contenidos2{
+    background-color: #37988B;
+    height: 100px;
+}
+
+.contenidos3{
+    background-color: #8E3E78;
+    height: 100px;
+}
