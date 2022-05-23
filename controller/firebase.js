@@ -1,28 +1,12 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-analytics.js";
+// <script src="../controller/firebase.js" type="module"></script>
+
+import * as firebase from ".././firebase-sdk/firebase-app.js";
+import * as fb_analytics from ".././firebase-sdk/firebase-analytics.js";
+import * as fb_auth from ".././firebase-sdk/firebase-auth.js";
+import * as fb_firestore from ".././firebase-sdk/firebase-firestore.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
-
-/*import { 
-  //auth,
-  firebase
-} from "https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js";
-*/
-//import "https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js";
-
-import {
-  getFirestore,
-  collection,
-  getDocs,
-  onSnapshot,
-  addDoc,
-  deleteDoc,
-  doc,
-  getDoc,
-  updateDoc,
-} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
-
 // Configuración base de la App
 const firebaseConfig = {
   apiKey: "AIzaSyBb8okuGxQx_s33_Ue_RteDzGcyGXeHa-4",
@@ -35,21 +19,13 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-export const firebaseApp = initializeApp(firebaseConfig);
-export const analytics = getAnalytics(firebaseApp);
+export const firebaseApp = firebase.initializeApp(firebaseConfig);
+export const analytics = fb_analytics.getAnalytics(firebaseApp);
 
 // Productos a utilizar
-export const db = getFirestore(firebaseApp);
-var ui = new firebaseui.auth.AuthUI(firebaseApp);
-export const ui_auth = auth(firebaseApp);
+export const db = fb_firestore.getFirestore(firebaseApp);
 
-ui.start('#firebaseui-auth-container', {
-    signInOptions: [
-      // List of OAuth providers supported.
-      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-    ],
-    // Other config options...
-  });
+//Autenticación
 
 /**
  * Parámetros para nueva tarea
