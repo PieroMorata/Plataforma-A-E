@@ -144,3 +144,25 @@ h3 {
 .video-casos {
   background-color: black;
 }
+
+/* Evaluación */
+
+.intro-modelos-ejemplo {
+  text-align: left;
+}
+
+.intro-modelos-comunidad {
+  text-align: right;
+}
+
+.container-modelos-ejemplo {
+  height: 500px;
+  background-color: #6666cc;
+  color: white;
+}
+
+.container-modelos-comunidad {
+  height: 500px;
+  background-color: #4acab9;
+  color: white;
+}
