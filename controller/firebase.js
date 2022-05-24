@@ -24,8 +24,12 @@ export const analytics = fb_analytics.getAnalytics(firebaseApp);
 
 // Productos a utilizar
 export const db = fb_firestore.getFirestore(firebaseApp);
+export const auth = fb_auth.getAuth();
+auth.languageCode = "es";
+export const provider = new fb_auth.GoogleAuthProvider();
 
 //Autenticación
+fb_auth.signInWithRedirect(auth, provider);
 
 /**
  * Parámetros para nueva tarea
