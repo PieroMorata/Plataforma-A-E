@@ -81,6 +81,16 @@ h3 {
   background-color: #6666cc;
 }
 
+.table-bibliografia {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+/* --Biblio Categoria Evaluacion Macro-- */
+
+.btn-cat-biblio {
+  background-color: #6666cc;
+}
+
 /* Contenidos */
 
 .contenidos1 {
