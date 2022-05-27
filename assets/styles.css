@@ -22,6 +22,11 @@ h3 {
   margin-top: 30px;
 }
 
+.margenes-costado {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
 .navigation-font {
   color: white;
 }
@@ -175,4 +180,34 @@ h3 {
   height: 500px;
   background-color: #4acab9;
   color: white;
+}
+
+.design-example-card {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.see-design-btn {
+  background-color: #8e3e78;
+  color: white;
+}
+
+.btn-purple {
+  background-color: #6666cc;
+}
+
+.eval-section {
+  background-color: #8e3e78;
+}
+
+.btn-green {
+  background-color: #4acab9;
+}
+
+.btn-yellow {
+  background-color: #f0cc42;
+}
+
+.btn-darkblue {
+  background-color: #035e7b;
 }
