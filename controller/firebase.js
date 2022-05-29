@@ -1,58 +1,50 @@
-// Import the functions you need from the SDKs you need
-// <script src="../controller/firebase.js" type="module"></script>
+const loggedOutLinks = document.querySelectorAll(".logged-out");
+const loggedInLinks = document.querySelectorAll(".logged-in");
 
-import * as firebase from ".././firebase-sdk/firebase-app.js";
-import * as fb_analytics from ".././firebase-sdk/firebase-analytics.js";
-import * as fb_auth from ".././firebase-sdk/firebase-auth.js";
-import * as fb_firestore from ".././firebase-sdk/firebase-firestore.js";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-// Configuración base de la App
-const firebaseConfig = {
-  apiKey: "AIzaSyBb8okuGxQx_s33_Ue_RteDzGcyGXeHa-4",
-  authDomain: "plataformaa-etest.firebaseapp.com",
-  projectId: "plataformaa-etest",
-  storageBucket: "plataformaa-etest.appspot.com",
-  messagingSenderId: "892500764951",
-  appId: "1:892500764951:web:29690fd500702db71def52",
-  measurementId: "G-Q30PRLWL5J"
+const loginCheck = (user) => {
+  if (user) {
+    loggedInLinks.forEach((link) => (link.style.display = "block"));
+    loggedOutLinks.forEach((link) => (link.style.display = "none"));
+  } else {
+    loggedInLinks.forEach((link) => (link.style.display = "none"));
+    loggedOutLinks.forEach((link) => (link.style.display = "block"));
+  }
 };
 
-// Initialize Firebase
-export const firebaseApp = firebase.initializeApp(firebaseConfig);
-export const analytics = fb_analytics.getAnalytics(firebaseApp);
+// SingIn
+const signInForm = document.querySelector("#login-form");
 
-// Productos a utilizar
-export const db = fb_firestore.getFirestore(firebaseApp);
-export const auth = fb_auth.getAuth();
-auth.languageCode = "es";
-export const provider = new fb_auth.GoogleAuthProvider();
+signInForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const email = signInForm["login-email"].value;
+  const password = signInForm["login-password"].value;
 
-//Autenticación
-fb_auth.signInWithRedirect(auth, provider);
+  // Authenticate the User
+  auth.signInWithEmailAndPassword(email, password).then((userCredential) => {
+    // clear the form
+    signInForm.reset();
+    // close the modal
+    $("#signinModal").modal("hide");
+  });
+});
 
-/**
- * Parámetros para nueva tarea
- * @param {string} title the title of the Task
- * @param {string} description the description of the Task
- */
+// Login with Google
+const googleButton = document.querySelector("#googleLogin");
 
-export const saveTask = (title, description) =>
-  addDoc(collection(db, "tasks"), { title, description });
+googleButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  signInForm.reset();
+  $("#signinModal").modal("hide");
 
-export const onGetTasks = (callback) =>
-  onSnapshot(collection(db, "tasks"), callback);
-
-/**
- *
- * @param {string} id Task ID
- */
-
-export const deleteTask = (id) => deleteDoc(doc(db, "tasks", id));
-
-export const getTask = (id) => getDoc(doc(db, "tasks", id));
-
-export const updateTask = (id, newFields) =>
-  updateDoc(doc(db, "tasks", id), newFields);
-
-export const getTasks = () => getDocs(collection(db, "tasks"));
+  const provider = new firebase.auth.GoogleAuthProvider();
+  auth.signInWithPopup(provider).then((result) => {
+    console.log(result);
+    console.log(result.user.displayName);
+    document.querySelector(".Usuario").innerHTML = result.user.displayName;
+    document.querySelector("#inicio_sesion").innerHTML = "";
+    console.log("google sign in");
+  })
+  .catch(err => {
+    console.log(err);
+  })
+});

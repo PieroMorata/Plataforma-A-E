@@ -12,6 +12,7 @@ const loginCheck = (user) => {
 };
 
 // SignUp
+/*
 const signUpForm = document.querySelector("#signup-form");
 signUpForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -24,7 +25,8 @@ signUpForm.addEventListener("submit", (e) => {
     .then((userCredential) => {
       // clear the form
       signUpForm.reset();
-      // close the modal
+      //Close the modal
+      //Formatear a Vanilla Javascript
       $("#signupModal").modal("hide");
     });
 });
@@ -38,7 +40,7 @@ logout.addEventListener("click", (e) => {
     console.log("signup out");
   });
 });
-
+*/
 // SingIn
 const signInForm = document.querySelector("#login-form");
 
@@ -56,6 +58,7 @@ signInForm.addEventListener("submit", (e) => {
   });
 });
 
+/*
 // Posts
 const postList = document.querySelector(".posts");
 const setupPosts = (data) => {
@@ -76,7 +79,9 @@ const setupPosts = (data) => {
     postList.innerHTML = '<h4 class="text-white">Login to See Posts</h4>';
   }
 };
+*/
 
+/*
 // events
 // list for auth state changes
 auth.onAuthStateChanged((user) => {
@@ -94,6 +99,8 @@ auth.onAuthStateChanged((user) => {
     loginCheck(user);
   }
 });
+
+*/
 
 // Login with Google
 const googleButton = document.querySelector("#googleLogin");
@@ -113,6 +120,7 @@ googleButton.addEventListener("click", (e) => {
   })
 });
 
+/*
 // Login with Facebook
 const facebookButton = document.querySelector('#facebookLogin');
 
@@ -131,3 +139,4 @@ facebookButton.addEventListener('click', e => {
   })
 
 })
+*/
