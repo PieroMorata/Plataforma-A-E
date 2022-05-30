@@ -1,5 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
 h3 {
   color: white;
+}
+
+.btn-close {
+  background-color: #ea872d;
+  border-radius: 50%;
 }
 
 .bg-navegacion {
@@ -13,19 +27,43 @@ h3 {
 .centrar-total {
   color: white;
   position: relative;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+.justificar-texto {
+  text-align: justify;
+}
+
 .margen-superior {
-  margin-top: 30px;
+  margin-top: 1.875rem;
+}
+
+.margen-inferior {
+  margin-bottom: 1.875rem;
 }
 
 .margenes-costado {
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 3.75rem;
+  margin-right: 3.75rem;
 }
+
+/* Navbar */
+
+.navbar-dark {
+  font-size: 1.2rem;
+}
+
+.item-margen {
+  margin-left: 1rem;
+}
+
+.nav-margen {
+  margin-left: 1.5rem;
+}
+
+/* ---------------------- */
 
 .navigation-font {
   color: white;
@@ -37,12 +75,58 @@ h3 {
 }
 
 .encabezado_inicio {
-  height: 200px;
+  height: 12.5rem;
   background-color: #b64e9b;
+  color: white;
+  padding-left: 2.5rem;
+  padding-right: 300px;
+  padding-top: 25px;
+  text-align: justify;
+}
+
+.encabezado_ae {
+  height: 14rem;
+  background-color: #b64e9b;
+  color: white;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1.5rem;
+  text-align: justify;
+}
+
+.encabezado-sub {
+  height: 6rem;
+  background-color: #ea872d;
+  color: white;
+  padding-left: 2.5rem;
+  padding-right: 300px;
+  padding-top: 25px;
+  text-align: justify;
+}
+
+.white-font {
   color: white;
 }
 
 /* Index */
+
+.como-usar {
+  height: 10rem;
+}
+
+.como-usartext {
+  height: 12rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1.5rem;
+  text-align: justify;
+  color: white;
+}
+
+.index-desc {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 
 .inicio_2 {
   height: 800px;
@@ -59,6 +143,42 @@ h3 {
   background-color: white;
 }
 
+.logos {
+  text-align: center;
+}
+
+.logo-size {
+  height: 5rem;
+  width: 5rem;
+}
+
+.img-equipo {
+  height: 16rem;
+  width: 16rem;
+  margin-left: 1rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.img-equipoweb {
+  height: 16rem;
+  width: 16rem;
+  margin-left: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.equipo-web {
+  justify-content: space-between;
+}
+
+.cont-categorias {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-bottom: 4rem;
+  height: 40rem;
+}
+
 /* Bibliografía */
 
 .biblio-btn {
@@ -67,7 +187,6 @@ h3 {
 
 .cat1 {
   background-color: #b64e9b;
-  height: 300px;
 }
 
 .cat2 {
@@ -84,6 +203,17 @@ h3 {
 
 .cat5 {
   background-color: #6666cc;
+  padding-left: 1.5rem;
+}
+
+.cat-descripcion {
+  padding-top: 35%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.cat-logo {
+  margin-top: 16rem;
 }
 
 .table-bibliografia {
@@ -100,26 +230,52 @@ h3 {
 
 .contenidos1 {
   background-color: white;
-  height: 300px;
+  height: 24rem;
 }
 
 .contenidos2 {
   background-color: #37988b;
-  height: 300px;
+  height: 24rem;
 }
 
 .contenidos3 {
   background-color: #8e3e78;
-  height: 300px;
+  height: 24rem;
 }
 
 .cont-desc {
   background-color: #035e7b;
   color: white;
-  margin-top: 30px;
-  margin-left: 30px;
-  margin-right: 30px;
-  height: 150px;
+  margin-top: 4.375rem;
+  margin-left: 2.5rem;
+  margin-right: 1.875rem;
+  height: 12rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.cont-desc2 {
+  background-color: #035e7b;
+  color: white;
+  margin-top: 4.375rem;
+  margin-left: 1.875rem;
+  margin-right: 2.5rem;
+  height: 12rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.desc-texto {
+  text-align: justify;
+}
+
+.items-cont {
+  margin-top: 1.875rem;
+  text-align: center;
 }
 
 /* Casos */
@@ -133,20 +289,21 @@ h3 {
 }
 
 .btnAgregarCaso {
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 .caso-card {
-  margin-top: 20px;
+  margin-top: 1.25rem;
   margin-left: 45px;
   margin-right: 45px;
-  height: 1000px;
+  margin-bottom: 1.25rem;
+  height: 67.5rem;
 }
 
 .subsecciones-casos {
   margin-left: 50px;
   margin-right: 50px;
-  height: 20px;
+  height: 1.25rem;
 }
 
 .titulo-caso-card {
@@ -162,29 +319,50 @@ h3 {
 
 /* Evaluación */
 
-.intro-modelos-ejemplo {
-  text-align: left;
-}
-
-.intro-modelos-comunidad {
-  text-align: right;
-}
-
 .container-modelos-ejemplo {
-  height: 500px;
+  height: 18.5rem;
   background-color: #6666cc;
   color: white;
+  margin-left: 3rem;
+  margin-right: 2rem;
+  padding-top: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .container-modelos-comunidad {
-  height: 500px;
+  height: 18.5rem;
   background-color: #4acab9;
   color: white;
+  margin-left: 2rem;
+  margin-right: 3rem;
+  padding-top: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .design-example-card {
   margin-left: 35px;
   margin-right: 35px;
+}
+
+.design-tools {
+  background-color: #035e7b;
+  color: white;
+  height: 12rem;
+  margin-top: 6rem;
+  margin-left: 3rem;
+  margin-right: 2rem;
+}
+
+.eval-design {
+  padding-left: 2rem;
+  padding-right: 2.5rem;
+}
+
+.eval-img {
+  width: 75%;
+  height: 15rem;
 }
 
 .see-design-btn {
@@ -194,10 +372,18 @@ h3 {
 
 .btn-purple {
   background-color: #6666cc;
+  color: white;
 }
 
 .eval-section {
   background-color: #8e3e78;
+}
+
+.evalform-sub {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .btn-green {
@@ -210,4 +396,13 @@ h3 {
 
 .btn-darkblue {
   background-color: #035e7b;
+}
+
+.video-casos1 {
+  background-color: black;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  height: 20rem;
 }

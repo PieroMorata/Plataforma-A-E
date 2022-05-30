@@ -25,50 +25,76 @@
     <div class="imagen_superior"></div>
 
     <!-- Barra de Navegación Principal -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-navegacion">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-navegacion"
+      aria-label="Twelfth navbar example"
+    >
       <div class="container-fluid">
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
+          data-bs-target="#navbarsExample10"
+          aria-controls="navbarsExample10"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="index.html">
-              <p class="navigation-font">A+E</p>
-            </a>
-            <a class="nav-link" href="bibliografia.html">
-              <p class="navigation-font">Bibliografía</p>
-            </a>
-            <a class="nav-link" href="contenidos.html">
-              <p class="navigation-font">Contenidos</p>
-            </a>
-            <a class="nav-link" href="casos.html">
-              <p class="navigation-font">Casos</p>
-            </a>
-            <a class="nav-link" href="evaluaciones.html">
-              <p class="navigation-font">Evaluaciones</p>
-            </a>
-          </div>
+
+        <div
+          class="collapse navbar-collapse justify-content-md-right"
+          id="navbarsExample10"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item nav-margen">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >A+E</a
+              >
+            </li>
+            <li class="nav-item item-margen">
+              <a class="nav-link" href="contenidos.html">Contenidos</a>
+            </li>
+            <li class="nav-item item-margen">
+              <a class="nav-link" href="casos.html"
+                >Casos Susceptibles de Evaluación</a
+              >
+            </li>
+            <li class="nav-item item-margen">
+              <a class="nav-link" href="evaluaciones.html"
+                >Diseños de Evaluación</a
+              >
+            </li>
+            <li class="nav-item item-margen">
+              <a class="nav-link" href="bibliografia.html">Bibliografía</a>
+            </li>
+            <li class="nav-item item-margen" style="margin-left: 20rem">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#signinModal"
+                id="inicio_sesion"
+                >Iniciar Sesión</a
+              >
+            </li>
+            <li>
+              <p class="nav-link Usuario" style="margin-left: 1rem">Invitado</p>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
     <!-- Sección Descripción A+E -->
-    <div class="encabezado_inicio">
+    <div class="encabezado-sub">
       <h3>
-        <a href="evaluaciones.html"><i class="fa-solid fa-angle-left"></i></a
-        >Agregar Diseño de Evaluación
+        <a href="evaluaciones.html"><i class="fa-solid fa-angle-left"></i></a>
+        Agregar Diseño de Evaluación
       </h3>
     </div>
     <!-- --------- -->
-    <div class="eval-section margen-superior">
+    <div class="eval-section margen-superior evalform-sub">
       <h3>Datos Generales</h3>
     </div>
 
@@ -127,7 +153,7 @@
       </div>
     </div>
     <!-- --------- -->
-    <div class="eval-section margen-superior">
+    <div class="eval-section margen-superior evalform-sub">
       <h3>Introducción</h3>
     </div>
     <div class="margenes-costado">
@@ -142,7 +168,7 @@
       />
     </div>
     <!-- --------- -->
-    <div class="eval-section margen-superior">
+    <div class="eval-section margen-superior evalform-sub">
       <h3>Sobre la Intervención</h3>
     </div>
 
@@ -176,7 +202,7 @@
       />
     </div>
     <!-- --------- -->
-    <div class="eval-section margen-superior">
+    <div class="eval-section margen-superior evalform-sub">
       <h3>Sobre las definiciones de evaluación</h3>
     </div>
     <div class="margenes-costado">
@@ -210,7 +236,7 @@
       />
     </div>
     <!-- --------- -->
-    <div class="eval-section margen-superior">
+    <div class="eval-section margen-superior evalform-sub">
       <h3>Sobre el diseño y tipología de evaluación</h3>
     </div>
     <div class="margenes-costado">
@@ -244,7 +270,7 @@
       />
     </div>
     <!-- --------- -->
-    <div class="eval-section margen-superior">
+    <div class="eval-section margen-superior evalform-sub">
       <h3>Sobre la estrategia de campo</h3>
     </div>
     <div class="margenes-costado">
@@ -296,7 +322,7 @@
       />
     </div>
     <!-- --------- -->
-    <div class="eval-section margen-superior">
+    <div class="eval-section margen-superior evalform-sub">
       <h3>Resguardos éticos y planificación</h3>
     </div>
     <div class="margenes-costado">
@@ -322,7 +348,7 @@
       />
     </div>
     <!-- --------- -->
-    <div class="eval-section margen-superior">
+    <div class="eval-section margen-superior evalform-sub">
       <h3>Conclusión</h3>
     </div>
     <div class="margenes-costado">
