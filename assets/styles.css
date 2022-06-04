@@ -319,6 +319,20 @@ h3 {
 
 /* Evaluación */
 
+.comments-content {
+  background-color: white;
+  height: 10rem;
+  width: 90%;
+}
+
+.comments-eval {
+  height: 18rem;
+  background-color: #febe10;
+  margin-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
 .container-modelos-ejemplo {
   height: 18.5rem;
   background-color: #6666cc;
@@ -363,6 +377,10 @@ h3 {
 .eval-img {
   width: 75%;
   height: 15rem;
+}
+
+.margen-evalcontent {
+  padding-left: 2rem;
 }
 
 .see-design-btn {
