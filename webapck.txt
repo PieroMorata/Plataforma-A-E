@@ -1,0 +1,12 @@
+https://www.youtube.com/watch?v=rQvOAnNvcNQ
+
+Para utilizar webpack:
+node_modules/.bin/webpack --entry <Ruta del archivo de inicio> -o dist
+
+El archivo de inicio es la raíz de los archivos javascript y es generalmente en donde
+se importan todas las librerías necesarias
+
+node_modules/.bin/webpack --entry ./controller/firebase_old.js -o dist
+
+En la carpeta dist debería estar el archivo index.html
+

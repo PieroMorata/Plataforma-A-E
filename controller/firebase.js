@@ -42,9 +42,27 @@ googleButton.addEventListener("click", (e) => {
     console.log(result.user.displayName);
     document.querySelector(".Usuario").innerHTML = result.user.displayName;
     document.querySelector("#inicio_sesion").innerHTML = "";
+    document.querySelector("#inicio_sesion").style = "display:none";
+    document.querySelector("#cerrar_sesion").innerHTML = "Cerrar Sesión";
+    document.querySelector("#cerrar_sesion").style = "margin-left: 20rem; display:inline-block";
+    
     console.log("google sign in");
   })
   .catch(err => {
     console.log(err);
   })
+});
+
+const logout = document.querySelector("#cerrar_sesion");
+
+logout.addEventListener("click", (e) => {
+  e.preventDefault();
+  auth.signOut().then(() => {
+    document.querySelector(".Usuario").innerHTML = "Invitado";
+    document.querySelector("#inicio_sesion").innerHTML = "Iniciar Sesión";
+    document.querySelector("#inicio_sesion").style = "margin-left: 20rem; visibility:visible";
+    document.querySelector("#cerrar_sesion").innerHTML = "";
+    document.querySelector("#cerrar_sesion").style = "margin-left: 0rem; visibility:hidden";
+    console.log("signup out");
+  });
 });

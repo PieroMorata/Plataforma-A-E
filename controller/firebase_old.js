@@ -1,14 +1,9 @@
-// Import the functions you need from the SDKs you need
-// <script src="../controller/firebase.js" type="module"></script>
+import { initializeApp } from 'firebase/app';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
 
-import * as firebase from ".././firebase-sdk/firebase-app.js";
-import * as fb_analytics from ".././firebase-sdk/firebase-analytics.js";
-import * as fb_auth from ".././firebase-sdk/firebase-auth.js";
-import * as fb_firestore from ".././firebase-sdk/firebase-firestore.js";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-// Configuración base de la App
-const firebaseConfig = {
+//Inicializar Firebase
+const firebaseApp = initializeApp({
   apiKey: "AIzaSyBb8okuGxQx_s33_Ue_RteDzGcyGXeHa-4",
   authDomain: "plataformaa-etest.firebaseapp.com",
   projectId: "plataformaa-etest",
@@ -16,19 +11,30 @@ const firebaseConfig = {
   messagingSenderId: "892500764951",
   appId: "1:892500764951:web:29690fd500702db71def52",
   measurementId: "G-Q30PRLWL5J"
-};
+});
 
 // Initialize Firebase
-export const firebaseApp = firebase.initializeApp(firebaseConfig);
-export const analytics = fb_analytics.getAnalytics(firebaseApp);
+const auth = getAuth(firebaseApp);
+const db = getFirestore(firebaseApp);
 
-// Productos a utilizar
-export const db = fb_firestore.getFirestore(firebaseApp);
-export const auth = fb_auth.getAuth();
 auth.languageCode = "es";
 export const provider = new fb_auth.GoogleAuthProvider();
 
+//Detectar estado de autenticación
+onAuthStateChanged(auth, user => {
+  if(user=!null){
+    console.log("Sesión iniciada");
+  }else{
+    console.log("No hay usuario");
+  }
+});
+
+
 //Autenticación
+
+
+
+
 fb_auth.signInWithRedirect(auth, provider);
 
 /**
