@@ -1,0 +1,60 @@
+.index {
+}
+
+.index__descripcion--texto {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.index__descripcion {
+  height: 800px;
+  background-color: white;
+}
+
+.index__descripcion--texto-logos-img {
+  height: 5rem;
+  width: 5rem;
+}
+
+.index__equipo--academico-foto {
+  height: 16rem;
+  width: 16rem;
+  margin-left: 1rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.index__equipo--web-foto {
+  height: 16rem;
+  width: 16rem;
+  margin-left: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.index__equipo--web {
+  justify-content: space-between;
+}
+
+.index__tutorial {
+  height: 10rem;
+  background-color: #4acab9;
+}
+
+.index__tutorial--texto {
+  height: 12rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1.5rem;
+  text-align: justify;
+  color: white;
+}
+
+.index__video {
+  height: 200px;
+  background-color: white;
+}
+
+.index__descripcion--texto-logos {
+  text-align: center;
+}

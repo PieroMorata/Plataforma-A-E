@@ -1,0 +1,29 @@
+.center-element {
+    text-align: center;
+  }
+  
+.justificar-texto {
+    text-align: justify;
+  }
+  
+.margen-superior {
+    margin-top: 1.875rem;
+  }
+  
+.margen-inferior {
+    margin-bottom: 1.875rem;
+  }
+  
+.margenes-costado {
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
+  }  
+
+.centrar-total {
+    color: white;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  

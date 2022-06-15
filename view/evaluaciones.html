@@ -86,7 +86,7 @@
     </nav>
 
     <!-- Encabezado Evaluaciones -->
-    <div class="encabezado_inicio">
+    <div class="encabezado">
       <h3>Evaluaciones</h3>
       <p>
         Donec in nibh mattis, varius lacus ac, aliquam diam. Quisque aliquam,
@@ -102,105 +102,111 @@
       </p>
     </div>
 
-    <div class="row">
-      <!-- Modelos de Ejemplo -->
+    <div class="evaluaciones">
+      <div class="row">
+        <!-- Modelos de Ejemplo -->
 
-      <div
-        class="col container-modelos-ejemplo margen-superior justificar-texto"
-      >
-        <h6 class="center-element">Modelos de Diseño (Ejemplos)</h6>
-        <p style="margin-top: 1rem">
-          Proin mollis facilisis ligula, eu varius mauris ultrices ac. Fusce a
-          pharetra nisi. Mauris vel fermentum ex, ac tempor arcu. Pellentesque
-          lacus libero, venenatis a sagittis vel, dignissim eget lacus. Aliquam
-          quis tempor lectus. Vestibulum id mauris erat. Vestibulum facilisis
-          auctor lacus eu congue. Nunc magna quam, vehicula vitae condimentum
-          id, mollis eget nisl.
-        </p>
-        <div class="center-element">
-          <a href="eval_ejemplos.html"
-            ><button class="btn btn-warning margen-superior">Entrar</button></a
-          >
-        </div>
-      </div>
-
-      <!-- Modelos Subidos por la Comunidad -->
-
-      <div
-        class="col container-modelos-comunidad margen-superior justificar-texto"
-      >
-        <h6 class="center-element">
-          Modelos de Diseño subidos por la Comunidad
-        </h6>
-        <p style="margin-top: 1rem">
-          Proin mollis facilisis ligula, eu varius mauris ultrices ac. Fusce a
-          pharetra nisi. Mauris vel fermentum ex, ac tempor arcu. Pellentesque
-          lacus libero, venenatis a sagittis vel, dignissim eget lacus. Aliquam
-          quis tempor lectus. Vestibulum id mauris erat. Vestibulum facilisis
-          auctor lacus eu congue. Nunc magna quam, vehicula vitae condimentum
-          id, mollis eget nisl.
-        </p>
-        <div class="center-element">
-          <a href="eval_comunidad.html"
-            ><button class="btn btn-warning margen-superior">Entrar</button></a
-          >
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="signinModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalSignin"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3>SignIn</h3>
-            <button
-              type="button"
-              class="close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
+        <div
+          class="col evaluaciones__modelos--ejemplo margen-superior justificar-texto"
+        >
+          <h6 class="center-element">Modelos de Diseño (Ejemplos)</h6>
+          <p style="margin-top: 1rem">
+            Proin mollis facilisis ligula, eu varius mauris ultrices ac. Fusce a
+            pharetra nisi. Mauris vel fermentum ex, ac tempor arcu. Pellentesque
+            lacus libero, venenatis a sagittis vel, dignissim eget lacus.
+            Aliquam quis tempor lectus. Vestibulum id mauris erat. Vestibulum
+            facilisis auctor lacus eu congue. Nunc magna quam, vehicula vitae
+            condimentum id, mollis eget nisl.
+          </p>
+          <div class="center-element">
+            <a href="eval_ejemplos.html"
+              ><button class="btn btn-warning margen-superior">
+                Entrar
+              </button></a
             >
-              <span aria-hidden="true">&times;</span>
-            </button>
           </div>
-          <div class="modal-body">
-            <form id="login-form">
-              <div class="form-group">
-                <input
-                  type="text"
-                  id="login-email"
-                  class="form-control"
-                  placeholder="Usuario"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="password"
-                  id="login-password"
-                  class="form-control"
-                  placeholder="Contraseña"
-                  required
-                />
-              </div>
-              <button type="submit" class="btn btn-secondary btn-block">
-                Iniciar Sesión
-              </button>
+        </div>
+
+        <!-- Modelos Subidos por la Comunidad -->
+
+        <div
+          class="col evaluaciones__modelos--comunidad margen-superior justificar-texto"
+        >
+          <h6 class="center-element">
+            Modelos de Diseño subidos por la Comunidad
+          </h6>
+          <p style="margin-top: 1rem">
+            Proin mollis facilisis ligula, eu varius mauris ultrices ac. Fusce a
+            pharetra nisi. Mauris vel fermentum ex, ac tempor arcu. Pellentesque
+            lacus libero, venenatis a sagittis vel, dignissim eget lacus.
+            Aliquam quis tempor lectus. Vestibulum id mauris erat. Vestibulum
+            facilisis auctor lacus eu congue. Nunc magna quam, vehicula vitae
+            condimentum id, mollis eget nisl.
+          </p>
+          <div class="center-element">
+            <a href="eval_comunidad.html"
+              ><button class="btn btn-warning margen-superior">
+                Entrar
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="signinModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalSignin"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>SignIn</h3>
               <button
                 type="button"
-                class="btn btn-info btn-block"
-                id="googleLogin"
+                class="close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
               >
-                Iniciar Sesión con Google
+                <span aria-hidden="true">&times;</span>
               </button>
-            </form>
+            </div>
+            <div class="modal-body">
+              <form id="login-form">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="login-email"
+                    class="form-control"
+                    placeholder="Usuario"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    id="login-password"
+                    class="form-control"
+                    placeholder="Contraseña"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-secondary btn-block">
+                  Iniciar Sesión
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-info btn-block"
+                  id="googleLogin"
+                >
+                  Iniciar Sesión con Google
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>

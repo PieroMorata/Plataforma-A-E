@@ -1,10 +1,10 @@
 {
-  "name": "plataforma-ae",
+  "name": "plataforma_ae",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass assets/sass/main.scss assets/styles.css"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/PieroMorata/Plataforma-A-E#readme",
   "dependencies": {
-    "firebase": "^9.8.2"
+    "firebase": "^9.8.2",
+    "node-sass": "^7.0.1",
+    "sass": "^1.52.3"
   },
   "devDependencies": {
     "webpack": "^5.73.0",
