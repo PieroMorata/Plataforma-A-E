@@ -8,7 +8,16 @@
 
 .index__descripcion {
   height: 800px;
-  background-color: white;
+  padding-top: 1.5rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(white, 1),
+      rgba(white, 0.85)
+    ),
+    url("https://trabajosocial.uc.cl/images/pregrado/VidaUniversitaria/UC-Corporativa-Ganderats-0222.jpg");
+  background-size: contain;
+  background-position: top;
+  position: relative;
 }
 
 .index__descripcion--texto-logos-img {
@@ -37,8 +46,16 @@
 }
 
 .index__tutorial {
-  height: 10rem;
   background-color: #4acab9;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#4acab9, 1),
+      rgba(#66a8a0, 0.7)
+    ),
+    url("https://w7.pngwing.com/pngs/103/232/png-transparent-digital-technology-blue-background-banner-beam-lines-blue-science-and-technology-digital.png");
+  background-size: contain;
+  background-position: top;
+  position: relative;
 }
 
 .index__tutorial--texto {
@@ -46,6 +63,7 @@
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   text-align: justify;
   color: white;
 }

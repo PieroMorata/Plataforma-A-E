@@ -1,14 +1,19 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  a {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
     color: inherit;
+    text-decoration: none;
+    text-decoration-color: none;
   }
-  
-  h3 {
-    color: white;
-  }
-  
- 
+}
+
+h3 {
+  color: white;
+}

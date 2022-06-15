@@ -1,3 +1,78 @@
+@mixin propiedades_boton {
+  text-decoration: none;
+  padding: 1.5rem 2rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: default;
+
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+}
+
+@mixin propiedades_btn_eval {
+  text-decoration: none;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: default;
+
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+}
+
+@mixin propiedades_btn_cuadrado {
+  text-decoration: none;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: default;
+
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+}
+
 // --LOGIN--
 
 .btn-close {
@@ -9,24 +84,34 @@
 
 .biblio-btn {
   background-color: #febe10;
+  @include propiedades_boton();
 }
 
 .btn-cat-biblio {
   background-color: #6666cc;
+  @include propiedades_boton();
 }
 
 // --EVALUACIÓN--
 
+.btn-inicio {
+  background-color: #febe10;
+  @include propiedades_btn_eval();
+}
+
 .btn-green {
   background-color: #4acab9;
+  @include propiedades_boton();
 }
 
 .btn-yellow {
   background-color: #f0cc42;
+  @include propiedades_boton;
 }
 
 .btn-darkblue {
   background-color: #035e7b;
+  @include propiedades_boton();
 }
 
 .see-design-btn {
@@ -37,10 +122,19 @@
 .btn-purple {
   background-color: #6666cc;
   color: white;
+  @include propiedades_boton();
 }
 
 // --CASOS--
 
 .btnAgregarCaso {
+  background-color: #035e7b;
+  color: white;
   margin-top: 1.875rem;
+  @include propiedades_btn_cuadrado();
+}
+
+.btnAgregarComplementario {
+  background-color: #febe10;
+  @include propiedades_btn_cuadrado();
 }

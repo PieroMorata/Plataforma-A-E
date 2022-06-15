@@ -1,29 +1,70 @@
+@mixin efecto_circulos_contenidos {
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+}
+
 .contenidos__basicos {
-  background-color: white;
-  height: 24rem;
+  height: 36rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(white, 1),
+      rgba(white, 0.85)
+    ),
+    url("https://advance.unab.cl/wp-content/uploads/2021/03/Sabes-que-hace-un-trabajador-social.jpg");
+  background-size: contain;
+  background-position: top;
+  position: relative;
 }
 
 .contenidos__micro {
   background-color: #37988b;
-  height: 24rem;
+  height: 36rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#37988b, 1),
+      rgba(#509e94, 0.9)
+    ),
+    url("https://sociologia.uc.cl/wp-content/uploads/2016/05/isuc-prueba-6-700x0-c-default.jpg");
+  background-size: contain;
+  background-position: top;
+  position: relative;
 }
 
 .contenidos__macro {
   background-color: #8e3e78;
-  height: 24rem;
+  height: 36rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#8e3e78, 1),
+      rgba(#944d80, 0.9)
+    ),
+    url("https://fastly.4sqi.net/img/general/558x200/65556003_9PYj5ocFyNRLU822_kevMK1rblp6ykmt5GlBQfnmb6k.jpg");
+  background-size: contain;
+  background-position: top;
+  position: relative;
 }
 
 .contenidos__descripcion {
-  background-color: #035e7b;
   color: white;
   margin-top: 4.375rem;
-  margin-left: 2.5rem;
+  margin-left: 3.5rem;
   margin-right: 1.875rem;
-  height: 12rem;
+  height: 28rem;
+  width: 28rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, rgba(#035e7b, 1), rgba(#1e667e, 0.85));
+  @include efecto_circulos_contenidos();
 }
 
 .contenidos__descripcion--2 {
@@ -31,19 +72,44 @@
   color: white;
   margin-top: 4.375rem;
   margin-left: 1.875rem;
-  margin-right: 2.5rem;
-  height: 12rem;
+  margin-right: 3.5rem;
+  height: 28rem;
+  width: 28rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, rgba(#035e7b, 1), rgba(#196179, 0.85));
+  @include efecto_circulos_contenidos();
 }
 
 .contenidos__textos-descripcion {
   text-align: justify;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 1.5rem;
+}
+
+.contenidos__textos-descripcion-titulo {
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+
+.contenidos__textos-descripcion-cuerpo {
+  font-size: 0.9rem;
 }
 
 .contenidos__items {
   margin-top: 1.875rem;
-  text-align: center;
+  text-align: left;
+  padding-top: 5.5rem;
+}
+
+.contenidos__items--2 {
+  margin-top: 1.875rem;
+  text-align: left;
+  padding-top: 6rem;
+  padding-left: 4rem;
 }

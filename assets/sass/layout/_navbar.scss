@@ -1,16 +1,19 @@
 .navbar-dark {
-    font-size: 1.2rem;
-  }
-  
+  font-size: 1.2rem;
+}
+
 .item-margen {
-    margin-left: 1rem;
-  }
-  
+  margin-left: 1rem;
+}
+
 .nav-margen {
-    margin-left: 1.5rem;
-  }
+  margin-left: 1.5rem;
+}
 
 .bg-navegacion {
-    background-color: #035e7b;
-  }
-  
+  background: linear-gradient(
+    to right bottom,
+    rgba(#035e7b, 1),
+    rgba(#1e667e, 0.9)
+  );
+}
