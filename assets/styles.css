@@ -6,18 +6,27 @@ a {
   color: inherit;
   text-decoration: none; }
   a:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-    a:hover::after {
-      transform: scaleX(1.4) scaleY(1.6);
-      opacity: 0; }
-  a:hover {
     color: inherit;
     text-decoration: none;
     text-decoration-color: none; }
 
 h3 {
   color: white; }
+
+table {
+  border-collapse: collapse;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  overflow: hidden; }
+
+th,
+td {
+  padding: 1rem;
+  background: #ddd;
+  border-bottom: 2px solid white; }
+
+p {
+  font-size: 0.95rem; }
 
 .white-font {
   color: white; }
@@ -68,22 +77,29 @@ h3 {
       opacity: 0; }
 
 .btn-cat-biblio {
-  background-color: #6666cc;
   text-decoration: none;
-  padding: 1.5rem 2rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   display: inline-block;
-  border-radius: 10rem;
+  border-radius: 0.75rem;
   transition: all 0.2s;
   position: relative;
   font-size: default;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  background: linear-gradient(to right bottom, #6666cc, rgba(128, 128, 211, 0.8)); }
   .btn-cat-biblio:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    color: white; }
     .btn-cat-biblio:hover::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0; }
+
+.btn__eval--text {
+  display: inline-block; }
 
 .btn-inicio {
   background-color: #febe10;
@@ -107,7 +123,7 @@ h3 {
       opacity: 0; }
 
 .btn-green {
-  background-color: #4acab9;
+  background: linear-gradient(to right bottom, #4acab9, rgba(100, 216, 201, 0.8));
   text-decoration: none;
   padding: 1.5rem 2rem;
   display: inline-block;
@@ -116,7 +132,8 @@ h3 {
   position: relative;
   font-size: default;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-bottom: 2.5rem; }
   .btn-green:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -125,7 +142,7 @@ h3 {
       opacity: 0; }
 
 .btn-yellow {
-  background-color: #f0cc42;
+  background: linear-gradient(to right bottom, #febe10, rgba(236, 197, 88, 0.8));
   text-decoration: none;
   padding: 1.5rem 2rem;
   display: inline-block;
@@ -143,7 +160,7 @@ h3 {
       opacity: 0; }
 
 .btn-darkblue {
-  background-color: #035e7b;
+  background: linear-gradient(to right bottom, #035e7b, rgba(19, 113, 145, 0.8));
   text-decoration: none;
   padding: 1.5rem 2rem;
   display: inline-block;
@@ -152,20 +169,24 @@ h3 {
   position: relative;
   font-size: default;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  color: white; }
   .btn-darkblue:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
     .btn-darkblue:hover::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0; }
+  .btn-darkblue:hover {
+    color: white; }
 
 .see-design-btn {
   background-color: #8e3e78;
+  background: linear-gradient(to right bottom, #8e3e78, rgba(133, 69, 115, 0.8));
   color: white; }
 
 .btn-purple {
-  background-color: #6666cc;
+  background: linear-gradient(to right bottom, #6666cc, rgba(120, 120, 206, 0.8));
   color: white;
   text-decoration: none;
   padding: 1.5rem 2rem;
@@ -182,9 +203,11 @@ h3 {
     .btn-purple:hover::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0; }
+  .btn-purple:hover {
+    color: white; }
 
 .btnAgregarCaso {
-  background-color: #035e7b;
+  background: linear-gradient(to right bottom, #035e7b, rgba(19, 113, 145, 0.8));
   color: white;
   margin-top: 1.875rem;
   text-decoration: none;
@@ -193,7 +216,7 @@ h3 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   display: inline-block;
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   transition: all 0.2s;
   position: relative;
   font-size: default;
@@ -201,20 +224,21 @@ h3 {
   cursor: pointer; }
   .btnAgregarCaso:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    color: white; }
     .btnAgregarCaso:hover::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0; }
 
 .btnAgregarComplementario {
-  background-color: #febe10;
+  background: linear-gradient(to right bottom, #febe10, rgba(243, 199, 78, 0.8));
   text-decoration: none;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   display: inline-block;
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   transition: all 0.2s;
   position: relative;
   font-size: default;
@@ -222,8 +246,31 @@ h3 {
   cursor: pointer; }
   .btnAgregarComplementario:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    color: white; }
     .btnAgregarComplementario:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
+
+.btnDescargarFicha {
+  background: linear-gradient(to right bottom, #198754, rgba(65, 160, 116, 0.8));
+  text-decoration: none;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  border-radius: 0.75rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: default;
+  border: none;
+  cursor: pointer; }
+  .btnDescargarFicha:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    color: white; }
+    .btnDescargarFicha:hover::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0; }
 
@@ -239,13 +286,21 @@ h3 {
   padding-left: 2rem;
   padding-right: 2.5rem; }
 
+.card__contenido--ver {
+  color: blue;
+  display: inline-block; }
+  .card__contenido--ver::after {
+    color: blue; }
+
 .card__herramientas {
   background-color: #035e7b;
+  background: linear-gradient(to right bottom, #035e7b, rgba(19, 97, 122, 0.8));
   color: white;
   height: 12rem;
   margin-top: 6rem;
   margin-left: 3rem;
-  margin-right: 2rem; }
+  margin-right: 2rem;
+  border-radius: 12px; }
 
 .card__video {
   background-color: black;
@@ -254,6 +309,12 @@ h3 {
   margin-right: 2rem;
   margin-bottom: 2rem;
   height: 20rem; }
+
+.card__video--flecha {
+  margin-top: 1.5rem; }
+
+.card__video--flecha2 {
+  margin-top: 1.5rem; }
 
 .imagen_superior {
   height: 100px;
@@ -270,9 +331,26 @@ h3 {
   background-size: contain;
   background-position: top;
   position: relative; }
+  .encabezado__texto {
+    width: 85%; }
   .encabezado-sub {
     height: 6rem;
     background-color: #ea872d;
+    background-image: linear-gradient(to right bottom, #ea872d, rgba(238, 156, 79, 0.8)), url("https://w7.pngwing.com/pngs/103/232/png-transparent-digital-technology-blue-background-banner-beam-lines-blue-science-and-technology-digital.png");
+    background-size: auto;
+    background-position: top;
+    position: relative;
+    color: white;
+    padding-left: 2.5rem;
+    padding-right: 300px;
+    padding-top: 25px;
+    text-align: justify; }
+  .encabezado__categoria {
+    height: 6rem;
+    background-image: linear-gradient(to right bottom, #6666cc, rgba(141, 141, 197, 0.9)), url("https://w7.pngwing.com/pngs/103/232/png-transparent-digital-technology-blue-background-banner-beam-lines-blue-science-and-technology-digital.png");
+    background-size: auto;
+    background-position: top;
+    position: relative;
     color: white;
     padding-left: 2.5rem;
     padding-right: 300px;
@@ -291,6 +369,10 @@ h3 {
 .bg-navegacion {
   background: linear-gradient(to right bottom, #035e7b, rgba(30, 102, 126, 0.9)); }
 
+.Usuario {
+  margin-left: 1rem;
+  margin-top: 0.3rem; }
+
 .bibliografia__categorias {
   margin-left: 4rem;
   margin-right: 4rem;
@@ -305,33 +387,53 @@ h3 {
 .bibliografia__categorias--logo {
   margin-top: 16rem; }
 
-.bibliografia__cont__tabla {
-  margin-left: 5rem;
-  margin-right: 5rem; }
+.bibliografia__cont {
+  text-align: center; }
+
+.bibliografia__cont__tabla--encabezado {
+  background: linear-gradient(to right bottom, #f0cc42, rgba(224, 207, 137, 0.9)); }
 
 .bibliografia__categorias--uno {
-  background-color: #b64e9b; }
+  background-image: linear-gradient(to right bottom, #b64e9b, rgba(192, 141, 178, 0.9)), url("https://xsolidaria.org/ARCHIVO/fotografias/exposicion/autismo_1.jpg");
+  background-size: auto;
+  background-position: top;
+  position: relative; }
 
 .bibliografia__categorias--dos {
-  background-color: #f0cc42; }
+  background-color: #f0cc42;
+  background-image: linear-gradient(to right bottom, #f0cc42, rgba(224, 207, 137, 0.9)), url("https://flacsochile.org/wp-content/uploads/proyetco2.jpg");
+  background-size: auto;
+  background-position: top;
+  position: relative; }
 
 .bibliografia__categorias--tres {
-  background-color: #4acab9; }
+  background-image: linear-gradient(to right bottom, #4acab9, rgba(128, 209, 198, 0.9)), url("https://flacsochile.org/wp-content/uploads/proyetco2.jpg");
+  background-size: auto;
+  background-position: top;
+  position: relative; }
 
 .bibliografia__categorias--cuatro {
-  background-color: #ea872d; }
+  background-image: linear-gradient(to right bottom, #ea872d, rgba(221, 159, 101, 0.9)), url("https://flacsochile.org/wp-content/uploads/proyetco2.jpg");
+  background-size: auto;
+  background-position: top;
+  position: relative; }
 
 .bibliografia__categorias--cinco {
-  background-color: #6666cc;
-  padding-left: 1.5rem; }
+  padding-left: 1.5rem;
+  background-image: linear-gradient(to right bottom, #6666cc, rgba(141, 141, 197, 0.9)), url("https://flacsochile.org/wp-content/uploads/proyetco2.jpg");
+  background-size: auto;
+  background-position: top;
+  position: relative; }
 
 .index__descripcion--texto {
   padding-left: 3rem;
-  padding-right: 3rem; }
+  padding-right: 3rem;
+  margin-top: 2rem; }
 
 .index__descripcion {
-  height: 800px;
+  height: 52rem;
   padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   background-image: linear-gradient(to right bottom, white, rgba(255, 255, 255, 0.85)), url("https://trabajosocial.uc.cl/images/pregrado/VidaUniversitaria/UC-Corporativa-Ganderats-0222.jpg");
   background-size: contain;
   background-position: top;
@@ -382,17 +484,18 @@ h3 {
   text-align: center; }
 
 .casos__subsecciones__bibliografia--header {
-  background-color: #f0cc42; }
+  background: linear-gradient(to right bottom, #f0cc42, rgba(209, 186, 94, 0.9)); }
 
 .casos__subsecciones__complementario--header {
-  background-color: #035e7b; }
+  color: white;
+  background: linear-gradient(to right bottom, #035e7b, rgba(44, 104, 124, 0.9)); }
 
 .casos__card {
   margin-top: 1.25rem;
-  margin-left: 45px;
-  margin-right: 45px;
+  margin-left: 3rem;
+  margin-right: 3rem;
   margin-bottom: 1.25rem;
-  height: 67.5rem; }
+  height: 75rem; }
 
 .casos__subsecciones {
   margin-left: 50px;
@@ -400,13 +503,27 @@ h3 {
   height: 1.25rem; }
 
 .casos__card--titulo {
+  margin: 0 0.01rem;
   display: flex;
-  justify-content: space-between;
-  background-color: #6666cc;
-  color: white; }
+  justify-content: space-evenly;
+  padding: 1rem 0 1rem 0;
+  color: white;
+  background: linear-gradient(to right bottom, #6666cc, rgba(140, 140, 201, 0.9)); }
+
+.casos__card--ficha {
+  margin-top: 3rem; }
+
+.casos__card--titulo-flecha {
+  text-align: right; }
 
 .casos__card--video {
   background-color: black; }
+
+.casos__subsecciones__bibliografia {
+  margin-top: 4rem; }
+
+.casos__subsecciones__complementario {
+  margin-top: 4rem; }
 
 .contenidos__basicos {
   height: 36rem;
@@ -446,10 +563,16 @@ h3 {
   background: linear-gradient(to bottom, #035e7b, rgba(30, 102, 126, 0.85)); }
   .contenidos__descripcion:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    color: white;
+    text-decoration: none;
+    text-decoration-color: none; }
     .contenidos__descripcion:hover::after {
       transform: scaleX(1.4) scaleY(1.6);
-      opacity: 0; }
+      opacity: 0;
+      color: white;
+      text-decoration: none;
+      text-decoration-color: none; }
 
 .contenidos__descripcion--2 {
   background-color: #035e7b;
@@ -467,10 +590,16 @@ h3 {
   background: linear-gradient(to bottom, #035e7b, rgba(25, 97, 121, 0.85)); }
   .contenidos__descripcion--2:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    color: white;
+    text-decoration: none;
+    text-decoration-color: none; }
     .contenidos__descripcion--2:hover::after {
       transform: scaleX(1.4) scaleY(1.6);
-      opacity: 0; }
+      opacity: 0;
+      color: white;
+      text-decoration: none;
+      text-decoration-color: none; }
 
 .contenidos__textos-descripcion {
   text-align: justify;
@@ -528,23 +657,25 @@ h3 {
 
 .evaluaciones__modelos--comunidad {
   height: 20rem;
-  background-color: #4acab9;
   color: white;
   margin-left: 2rem;
   margin-right: 3rem;
   padding-top: 2rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  border-radius: 1.5rem; }
+  border-radius: 1.5rem;
+  background-image: linear-gradient(to right bottom, #4acab9, rgba(100, 172, 162, 0.9)), url("https://trabajosocial.uc.cl/images/pregrado/VidaUniversitaria/UC-Corporativa-Ganderats-0222.jpg");
+  background-size: contain;
+  background-position: top;
+  position: relative; }
 
 .evaluaciones__contenido__margen {
   padding-left: 2rem; }
-
-.evaluaciones__form--color {
-  background-color: #8e3e78; }
 
 .evaluaciones__form--titulos {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   padding-left: 1.5rem;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  background-color: #8e3e78;
+  background: linear-gradient(to right bottom, #8e3e78, rgba(163, 86, 141, 0.9)); }

@@ -82,7 +82,7 @@
     <!-- Encabezado Casos -->
     <div class="encabezado">
       <h3>Casos Susceptibles de Evaluación</h3>
-      <p>
+      <p class="encabezado__texto">
         Donec in nibh mattis, varius lacus ac, aliquam diam. Quisque aliquam,
         velit et accumsan tempus, nunc nulla iaculis dolor, at facilisis ex ex
         sit amet metus. Etiam consectetur scelerisque iaculis. Vivamus blandit
@@ -106,14 +106,14 @@
 
   <!-- Tarjeta Estática de Caso -->
   <div class="card casos__card">
-    <div class="card-header casos__card--titulo">
-      Caso 1: Colegio San Alberto, Estación Central. Implementación “Plan de
-      acogida y buen trato”.
-      <i class="fa-solid fa-caret-up"></i>
+    <div class="card-header casos__card--titulo row">
+      <h5 class="col-9">Caso 1: Colegio San Alberto, Estación Central. Implementación “Plan de
+        acogida y buen trato”.</h4>
+      <i class="fa-solid fa-caret-up fa-2x col-3 casos__card--titulo-flecha"></i>
     </div>
     
-        <div class="row margen-superior" style="height: 15rem;">
-          <div class="col justificar-texto" style="padding-top: 2rem; padding-left: 2rem; padding-right:2rem;">
+      <div class="row margen-superior" style="height: 15rem;">
+        <div class="col justificar-texto" style="padding-top: 2rem; padding-left: 2rem; padding-right:2rem;">
             <p>
               Etiam imperdiet orci id leo molestie fermentum sed sodales
               sapien. Donec in tempor mauris. Pellentesque pellentesque
@@ -133,84 +133,92 @@
           </div>
         </div>
         <div class="center-element">
-          <h6 class="margen-superior">Descargar Ficha del Caso</h6>
-          <div>
-            <button class="btn btn-success" style="padding-left: 2rem; padding-right: 2rem; padding-top:1rem; padding-bottom: 1rem;"><i class="fa-solid fa-download fa-2x"></i></button>
+          <div class="casos__card--ficha">
+            <h6 class="margen-superior">Descargar Ficha del Caso</h6>
+            <div>
+              <button class="btn btnDescargarFicha" style="padding-left: 2rem; padding-right: 2rem; padding-top:1rem; padding-bottom: 1rem;"><i class="fa-solid fa-download fa-2x"></i></button>
+            </div>
           </div>
         </div>
     
-    <div class="casos__subsecciones">
-      <!-- Subsección Bibliografía Relacionada -->
-      <div class="center-element">
-          <h5 class="margen-superior">Bibliografía Relacionada</h6>
-          <div>
-      <table class="table table-bordered margen-superior">
-        <thead class="casos__subsecciones__bibliografia--header">
-          <tr>
-            <th scope="col">Autor</th>
-            <th scope="col">Título</th>
-            <th scope="col">Descargar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Cueva, Diego (2020)</td>
-            <td>La tecnología educativa en tiempo de crisis</td>
-            <td><i class="fa-solid fa-download"></i></td>
-          </tr>
-          <tr>
-            <td>Cueva, Diego (2020)</td>
-            <td>La tecnología educativa en tiempo de crisis</td>
-            <td><i class="fa-solid fa-download"></i></td>
-          </tr>
-          <tr>
-            <td>Cueva, Diego (2020)</td>
-            <td>La tecnología educativa en tiempo de crisis</td>
-            <td><i class="fa-solid fa-download"></i></td>
-          </tr>
-        </tbody>
-      </table>
+        <div class="casos__subsecciones">
+        <div class="center-element">
+        <!-- Subsección Bibliografía Relacionada -->
+        <div class="casos__subsecciones__bibliografia"> <h5 class="margen-superior">Bibliografía Relacionada</h6>
+        
+        <table class="table table-bordered margen-superior casos__subsecciones__tabla">
+          <thead class="casos__subsecciones__bibliografia--header">
+            <tr>
+              <th scope="col">Autor</th>
+              <th scope="col">Título</th>
+              <th scope="col">Descargar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cueva, Diego (2020)</td>
+              <td>La tecnología educativa en tiempo de crisis</td>
+              <td><i class="fa-solid fa-download"></i></td>
+            </tr>
+            <tr>
+              <td>Cueva, Diego (2020)</td>
+              <td>La tecnología educativa en tiempo de crisis</td>
+              <td><i class="fa-solid fa-download"></i></td>
+            </tr>
+            <tr>
+              <td>Cueva, Diego (2020)</td>
+              <td>La tecnología educativa en tiempo de crisis</td>
+              <td><i class="fa-solid fa-download"></i></td>
+            </tr>
+          </tbody>
+        </table></div>
+      
+         
       <!-- Subsección Material Complementario -->
       <div class="center-element">
+        <div class="casos__subsecciones__complementario">
           <h5 class="margen-superior">Material Complementario</h6>
-          <div>
-      <table class="table table-bordered margen-superior">
-        <thead class="casos__subsecciones__complementario--header">
-          <tr>
-            <th scope="col">Autor</th>
-            <th scope="col">Título</th>
-            <th scope="col">Descargar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Cueva, Diego (2020)</td>
-            <td>La tecnología educativa en tiempo de crisis</td>
-            <td><i class="fa-solid fa-download"></i></td>
-          </tr>
-          <tr>
-            <td>Cueva, Diego (2020)</td>
-            <td>La tecnología educativa en tiempo de crisis</td>
-            <td><i class="fa-solid fa-download"></i></td>
-          </tr>
-          <tr>
-            <td>Cueva, Diego (2020)</td>
-            <td>La tecnología educativa en tiempo de crisis</td>
-            <td><i class="fa-solid fa-download"></i></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <button class="btn btnAgregarComplementario margen-superior"><i class="fa-solid fa-plus"></i></button>
-      <p style="margin-top: 0.5rem;">Agregar Material Complementario</p>
+          
+            <table class="table table-bordered margen-superior casos__subsecciones__tabla">
+              <thead class="casos__subsecciones__complementario--header">
+                <tr>
+                  <th scope="col">Autor</th>
+                  <th scope="col">Título</th>
+                  <th scope="col">Descargar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cueva, Diego (2020)</td>
+                  <td>La tecnología educativa en tiempo de crisis</td>
+                  <td><i class="fa-solid fa-download"></i></td>
+                </tr>
+                <tr>
+                  <td>Cueva, Diego (2020)</td>
+                  <td>La tecnología educativa en tiempo de crisis</td>
+                  <td><i class="fa-solid fa-download"></i></td>
+                </tr>
+                <tr>
+                  <td>Cueva, Diego (2020)</td>
+                  <td>La tecnología educativa en tiempo de crisis</td>
+                  <td><i class="fa-solid fa-download"></i></td>
+                </tr>
+              </tbody>
+            </table>
+    
+            <button class="btn btnAgregarComplementario margen-superior"><i class="fa-solid fa-plus"></i></button>
+            <p style="margin-top: 0.5rem;">Agregar Material Complementario</p>
+        </div>
+      </div>
+        
     </div>
   </div>
 
-    </div>
+ 
 
     
     <!-- Bootstrap JS & Popper -->
-    <script
+  <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"

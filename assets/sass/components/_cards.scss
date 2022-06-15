@@ -13,13 +13,28 @@
   padding-right: 2.5rem;
 }
 
+.card__contenido--ver {
+  color: blue;
+  display: inline-block;
+
+  &::after {
+    color: blue;
+  }
+}
+
 .card__herramientas {
   background-color: #035e7b;
+  background: linear-gradient(
+    to right bottom,
+    rgba(#035e7b, 1),
+    rgba(#13617a, 0.8)
+  );
   color: white;
   height: 12rem;
   margin-top: 6rem;
   margin-left: 3rem;
   margin-right: 2rem;
+  border-radius: 12px;
 }
 
 .card__video {
@@ -29,4 +44,12 @@
   margin-right: 2rem;
   margin-bottom: 2rem;
   height: 20rem;
+}
+
+.card__video--flecha {
+  margin-top: 1.5rem;
+}
+
+.card__video--flecha2 {
+  margin-top: 1.5rem;
 }

@@ -17,3 +17,21 @@ a {
 h3 {
   color: white;
 }
+
+table {
+  border-collapse: collapse;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 1rem;
+  background: #ddd;
+  border-bottom: 2px solid white;
+}
+
+p {
+  font-size: 0.95rem;
+}

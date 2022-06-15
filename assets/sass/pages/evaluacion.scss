@@ -37,7 +37,6 @@
 
 .evaluaciones__modelos--comunidad {
   height: 20rem;
-  background-color: #4acab9;
   color: white;
   margin-left: 2rem;
   margin-right: 3rem;
@@ -45,14 +44,19 @@
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   border-radius: 1.5rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#4acab9, 1),
+      rgba(#64aca2, 0.9)
+    ),
+    url("https://trabajosocial.uc.cl/images/pregrado/VidaUniversitaria/UC-Corporativa-Ganderats-0222.jpg");
+  background-size: contain;
+  background-position: top;
+  position: relative;
 }
 
 .evaluaciones__contenido__margen {
   padding-left: 2rem;
-}
-
-.evaluaciones__form--color {
-  background-color: #8e3e78;
 }
 
 .evaluaciones__form--titulos {
@@ -60,4 +64,10 @@
   padding-bottom: 0.75rem;
   padding-left: 1.5rem;
   margin-bottom: 1.5rem;
+  background-color: #8e3e78;
+  background: linear-gradient(
+    to right bottom,
+    rgba(#8e3e78, 1),
+    rgba(#a3568d, 0.9)
+  );
 }

@@ -21,9 +21,40 @@
   background-position: top;
   position: relative;
 
+  &__texto {
+    width: 85%;
+  }
+
   &-sub {
     height: 6rem;
     background-color: #ea872d;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(#ea872d, 1),
+        rgba(#ee9c4f, 0.8)
+      ),
+      url("https://w7.pngwing.com/pngs/103/232/png-transparent-digital-technology-blue-background-banner-beam-lines-blue-science-and-technology-digital.png");
+    background-size: auto;
+    background-position: top;
+    position: relative;
+    color: white;
+    padding-left: 2.5rem;
+    padding-right: 300px;
+    padding-top: 25px;
+    text-align: justify;
+  }
+
+  &__categoria {
+    height: 6rem;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(#6666cc, 1),
+        rgba(#8d8dc5, 0.9)
+      ),
+      url("https://w7.pngwing.com/pngs/103/232/png-transparent-digital-technology-blue-background-banner-beam-lines-blue-science-and-technology-digital.png");
+    background-size: auto;
+    background-position: top;
+    position: relative;
     color: white;
     padding-left: 2.5rem;
     padding-right: 300px;

@@ -2,10 +2,16 @@
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(black, 0.2);
+    color: white;
+    text-decoration: none;
+    text-decoration-color: none;
 
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0;
+      color: white;
+      text-decoration: none;
+      text-decoration-color: none;
     }
   }
 }

@@ -54,7 +54,7 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   display: inline-block;
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   transition: all 0.2s;
   position: relative;
   font-size: default;
@@ -65,6 +65,7 @@
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(black, 0.2);
+    color: white;
 
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
@@ -88,11 +89,19 @@
 }
 
 .btn-cat-biblio {
-  background-color: #6666cc;
-  @include propiedades_boton();
+  @include propiedades_btn_cuadrado();
+  background: linear-gradient(
+    to right bottom,
+    rgba(#6666cc, 1),
+    rgba(#8080d3, 0.8)
+  );
 }
 
 // --EVALUACIÓN--
+
+.btn__eval--text {
+  display: inline-block;
+}
 
 .btn-inicio {
   background-color: #febe10;
@@ -100,41 +109,87 @@
 }
 
 .btn-green {
-  background-color: #4acab9;
+  background: linear-gradient(
+    to right bottom,
+    rgba(#4acab9, 1),
+    rgba(#64d8c9, 0.8)
+  );
   @include propiedades_boton();
+  margin-bottom: 2.5rem;
 }
 
 .btn-yellow {
-  background-color: #f0cc42;
+  background: linear-gradient(
+    to right bottom,
+    rgba(#febe10, 1),
+    rgba(#ecc558, 0.8)
+  );
   @include propiedades_boton;
 }
 
 .btn-darkblue {
-  background-color: #035e7b;
+  background: linear-gradient(
+    to right bottom,
+    rgba(#035e7b, 1),
+    rgba(#137191, 0.8)
+  );
   @include propiedades_boton();
+  color: white;
+  &:hover {
+    color: white;
+  }
 }
 
 .see-design-btn {
   background-color: #8e3e78;
+  background: linear-gradient(
+    to right bottom,
+    rgba(#8e3e78, 1),
+    rgba(#854573, 0.8)
+  );
   color: white;
 }
 
 .btn-purple {
-  background-color: #6666cc;
+  background: linear-gradient(
+    to right bottom,
+    rgba(#6666cc, 1),
+    rgba(#7878ce, 0.8)
+  );
   color: white;
   @include propiedades_boton();
+  &:hover {
+    color: white;
+  }
 }
 
 // --CASOS--
 
 .btnAgregarCaso {
-  background-color: #035e7b;
+  background: linear-gradient(
+    to right bottom,
+    rgba(#035e7b, 1),
+    rgba(#137191, 0.8)
+  );
   color: white;
   margin-top: 1.875rem;
   @include propiedades_btn_cuadrado();
 }
 
 .btnAgregarComplementario {
-  background-color: #febe10;
+  background: linear-gradient(
+    to right bottom,
+    rgba(#febe10, 1),
+    rgba(#f3c74e, 0.8)
+  );
+  @include propiedades_btn_cuadrado();
+}
+
+.btnDescargarFicha {
+  background: linear-gradient(
+    to right bottom,
+    rgba(#198754, 1),
+    rgba(#41a074, 0.8)
+  );
   @include propiedades_btn_cuadrado();
 }

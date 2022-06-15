@@ -19,30 +19,75 @@
 }
 
 .bibliografia__cont {
+  text-align: center;
 }
 
-.bibliografia__cont__tabla {
-  margin-left: 5rem;
-  margin-right: 5rem;
+.bibliografia__cont__tabla--encabezado {
+  background: linear-gradient(
+    to right bottom,
+    rgba(#f0cc42, 1),
+    rgba(#e0cf89, 0.9)
+  );
 }
 
 .bibliografia__categorias--uno {
-  background-color: #b64e9b;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#b64e9b, 1),
+      rgba(#c08db2, 0.9)
+    ),
+    url("https://xsolidaria.org/ARCHIVO/fotografias/exposicion/autismo_1.jpg");
+  background-size: auto;
+  background-position: top;
+  position: relative;
 }
 
 .bibliografia__categorias--dos {
   background-color: #f0cc42;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#f0cc42, 1),
+      rgba(#e0cf89, 0.9)
+    ),
+    url("https://flacsochile.org/wp-content/uploads/proyetco2.jpg");
+  background-size: auto;
+  background-position: top;
+  position: relative;
 }
 
 .bibliografia__categorias--tres {
-  background-color: #4acab9;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#4acab9, 1),
+      rgba(#80d1c6, 0.9)
+    ),
+    url("https://flacsochile.org/wp-content/uploads/proyetco2.jpg");
+  background-size: auto;
+  background-position: top;
+  position: relative;
 }
 
 .bibliografia__categorias--cuatro {
-  background-color: #ea872d;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#ea872d, 1),
+      rgba(#dd9f65, 0.9)
+    ),
+    url("https://flacsochile.org/wp-content/uploads/proyetco2.jpg");
+  background-size: auto;
+  background-position: top;
+  position: relative;
 }
 
 .bibliografia__categorias--cinco {
-  background-color: #6666cc;
   padding-left: 1.5rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#6666cc, 1),
+      rgba(#8d8dc5, 0.9)
+    ),
+    url("https://flacsochile.org/wp-content/uploads/proyetco2.jpg");
+  background-size: auto;
+  background-position: top;
+  position: relative;
 }

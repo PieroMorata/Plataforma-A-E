@@ -1,17 +1,26 @@
 .casos__subsecciones__bibliografia--header {
-  background-color: #f0cc42;
+  background: linear-gradient(
+    to right bottom,
+    rgba(#f0cc42, 1),
+    rgba(#d1ba5e, 0.9)
+  );
 }
 
 .casos__subsecciones__complementario--header {
-  background-color: #035e7b;
+  color: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(#035e7b, 1),
+    rgba(#2c687c, 0.9)
+  );
 }
 
 .casos__card {
   margin-top: 1.25rem;
-  margin-left: 45px;
-  margin-right: 45px;
+  margin-left: 3rem;
+  margin-right: 3rem;
   margin-bottom: 1.25rem;
-  height: 67.5rem;
+  height: 75rem;
 }
 
 .casos__subsecciones {
@@ -21,12 +30,34 @@
 }
 
 .casos__card--titulo {
+  margin: 0 0.01rem;
   display: flex;
-  justify-content: space-between;
-  background-color: #6666cc;
+  justify-content: space-evenly;
+  padding: 1rem 0 1rem 0;
   color: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(#6666cc, 1),
+    rgba(#8c8cc9, 0.9)
+  );
+}
+
+.casos__card--ficha {
+  margin-top: 3rem;
+}
+
+.casos__card--titulo-flecha {
+  text-align: right;
 }
 
 .casos__card--video {
   background-color: black;
+}
+
+.casos__subsecciones__bibliografia {
+  margin-top: 4rem;
+}
+
+.casos__subsecciones__complementario {
+  margin-top: 4rem;
 }
