@@ -3,12 +3,12 @@
 
 .index__descripcion--texto {
   padding-left: 3rem;
-  padding-right: 3rem;
+  padding-right: 1.5rem;
   margin-top: 2rem;
 }
 
 .index__descripcion {
-  height: 52rem;
+  height: 56rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   background-image: linear-gradient(
@@ -27,20 +27,71 @@
   width: 5rem;
 }
 
+.index__equipo--academico--circulo {
+  width: 19rem;
+  height: 18rem;
+  -webkit-clip-path: circle(47.5% at 50% 50%);
+  clip-path: circle(47.5% at 50% 50%);
+  transform: translateX(1.25rem);
+  position: relative;
+
+  &:hover &--caption {
+    opacity: 1;
+    transform: translateY(-50%, -50%);
+  }
+
+  &--caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 0.85rem;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.5s;
+  }
+}
+
 .index__equipo--academico-foto {
-  height: 16rem;
-  width: 16rem;
-  margin-left: 1rem;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 18rem;
+  &:hover {
+    filter: blur(6px) brightness(70%);
+  }
+}
+.index__equipo--web--circulo {
+  width: 19rem;
+  height: 18rem;
+  -webkit-clip-path: circle(47.5% at 50% 50%);
+  clip-path: circle(47.5% at 50% 50%);
+  transform: translateX(6rem);
+  position: relative;
+
+  &:hover &--caption {
+    opacity: 1;
+    transform: translateY(-50%, -50%);
+  }
+
+  &--caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 0.85rem;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.5s;
+  }
 }
 
 .index__equipo--web-foto {
-  height: 16rem;
-  width: 16rem;
-  margin-left: 5rem;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 18rem;
+  height: 18rem;
+
+  &:hover {
+    filter: blur(6px) brightness(70%);
+  }
 }
 
 .index__equipo--web {
