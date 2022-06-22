@@ -193,3 +193,13 @@
   );
   @include propiedades_btn_cuadrado();
 }
+
+.btnAgregarArchivos {
+  background: linear-gradient(
+    to right bottom,
+    rgba(#035e7b, 1),
+    rgba(#137191, 0.8)
+  );
+  @include propiedades_btn_cuadrado();
+  color: white;
+}

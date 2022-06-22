@@ -1,97 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Font Awesome CDN -->
-    <script
-      src="https://kit.fontawesome.com/9b31d59eb4.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- CSS Interno -->
-    <link rel="stylesheet" href="../assets/styles.css" />
-    <title>Bibliografía</title>
-  </head>
-
-  <body>
-    <!-- Imagen inicial -->
-    <div class="imagen_superior"></div>
-
-    <!-- Barra de Navegación Principal -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-navegacion"
-      aria-label="Twelfth navbar example"
-    >
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarsExample10"
-          aria-controls="navbarsExample10"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font Awesome CDN -->
+        <script src="https://kit.fontawesome.com/9b31d59eb4.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div
-          class="collapse navbar-collapse justify-content-md-right"
-          id="navbarsExample10"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item nav-margen">
-              <a class="nav-link" aria-current="page" href="../index.html">A+E</a>
-            </li>
-            <li class="nav-item item-margen">
-              <a class="nav-link" href="contenidos.html">Contenidos</a>
-            </li>
-            <li class="nav-item item-margen">
-              <a class="nav-link" href="casos.html"
-                >Casos Susceptibles de Evaluación</a
+        <!-- CSS Interno -->
+        <link rel="stylesheet" href="../assets/styles.css">
+        <title>Bibliografía</title>
+    </head>
+    <body>
+        <!-- Imagen inicial -->
+        <div class="imagen_superior"></div>
+        <!-- Barra de Navegación Principal -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-navegacion" aria-label="Twelfth navbar example">
+            <div class="container-fluid">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample10"
+                    aria-controls="navbarsExample10"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-right" id="navbarsExample10">
+                    <ul class="navbar-nav">
+                        <li class="nav-item nav-margen">
+                            <a class="nav-link" aria-current="page" href="../index.html">A+E</a>
+                        </li>
+                        <li class="nav-item item-margen">
+                            <a class="nav-link" href="contenidos.html">Contenidos</a>
+                        </li>
+                        <li class="nav-item item-margen">
+                            <a class="nav-link" href="casos.html">Casos Susceptibles de Evaluación
+                            </a
               >
-            </li>
-            <li class="nav-item item-margen">
-              <a class="nav-link" href="evaluaciones.html"
-                >Diseños de Evaluación</a
+                        </li>
+                        <li class="nav-item item-margen">
+                            <a class="nav-link" href="evaluaciones.html">Diseños de Evaluación
+                            </a
               >
-            </li>
-            <li class="nav-item item-margen">
-              <a class="nav-link active" href="bibliografia.html"
-                >Bibliografía</a
+                        </li>
+                        <li class="nav-item item-margen">
+                            <a class="nav-link active" href="bibliografia.html">Bibliografía
+                            </a
               >
-            </li>
-            <li class="nav-item item-margen" style="margin-left: 20rem">
-              <a
-                class="nav-link"
-                href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#signinModal"
-                id="inicio_sesion"
-                >Iniciar Sesión</a
+                        </li>
+                        <li class="nav-item item-margen" style="margin-left: 20rem">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                data-bs-toggle="modal"
+                                data-bs-target="#signinModal"
+                                id="inicio_sesion"
+                            >Iniciar Sesión
+                            </a
               >
-            </li>
-            <li>
-              <p class="nav-link Usuario" style="margin-left: 1rem">Invitado</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Encabezado Bibliografía -->
-    <div class="encabezado">
-      <h3>Bibliografía</h3>
-      <p class="encabezado__texto">
-        Donec in nibh mattis, varius lacus ac, aliquam diam. Quisque aliquam,
+                        </li>
+                        <li>
+                            <p class="nav-link Usuario" style="margin-left: 1rem">Invitado</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Encabezado Bibliografía -->
+        <div class="encabezado">
+            <h3>Bibliografía</h3>
+            <p class="encabezado__texto">
+                Donec in nibh mattis, varius lacus ac, aliquam diam. Quisque aliquam,
         velit et accumsan tempus, nunc nulla iaculis dolor, at facilisis ex ex
         sit amet metus. Etiam consectetur scelerisque iaculis. Vivamus blandit
         risus viverra diam sagittis, dictum lacinia urna tristique. Nulla eu
@@ -100,64 +91,131 @@
         massa. Vivamus sodales velit dignissim ipsum imperdiet, euismod semper
         elit sagittis. Curabitur fringilla sapien non dignissim eleifend. Cras
         vel laoreet leo, non egestas sapien. amet.
-      </p>
-    </div>
-
-    <div class="bibliografia">
-      <!-- Sección despliegue de categorías -->
-      <h2 class="margen-superior" style="text-align: center">Categorías</h4>
-      <div class="row margen-superior bibliografia__categorias">
-        <div class="col-2 bibliografia__categorias--uno center-element">
-          <i class="fa-brands fa-searchengin fa-8x bibliografia__categorias--logo"></i>
-          <h5 class="margen-superior">Investigación</h5>
+            </p>
         </div>
-        <div class="col-2 bibliografia__categorias--dos center-element">
-          <i class="fa-brands fa-searchengin fa-8x bibliografia__categorias--logo"></i>
-          <h5 class="margen-superior">Evaluación</h5>
-        </div>
-        <div class="col-2 bibliografia__categorias--tres center-element">
-          <i class="fa-brands fa-searchengin fa-8x bibliografia__categorias--logo"></i>
-          <h5 class="margen-superior">Experiencias</h5>
-        </div>
-        <div class="col-2 bibliografia__categorias--cuatro center-element">
-          <i class="fa-brands fa-searchengin fa-8x bibliografia__categorias--logo"></i>
-          <h5 class="margen-superior">Evaluaciones Micro</h5>
-        </div>
-        <div class="col-4 bibliografia__categorias--cinco center-element justificar-texto">
-          <div class="row">
-            <div class="col-4"><i class="fa-brands fa-searchengin fa-8x bibliografia__categorias--logo"></i>
-              <h5 class="margen-superior">Evaluaciones Macro</h5></div>
-            <div class="col-8 bibliografia__categorias--descripcion"> 
-              <p>Nunc elementum, arcu sed tempus
+        <div class="bibliografia">
+            <!-- Sección despliegue de categorías -->
+            <h2 class="margen-superior" style="text-align: center">Categorías
+            </h4>
+            <div class="row margen-superior bibliografia__categorias">
+                <div class="col-2 bibliografia__categorias--uno center-element">
+                    <i class="fa-brands fa-searchengin fa-8x bibliografia__categorias--logo"></i>
+                    <h5 class="margen-superior">Investigación</h5>
+                </div>
+                <div class="col-2 bibliografia__categorias--dos center-element">
+                    <i class="fa-brands fa-searchengin fa-8x bibliografia__categorias--logo"></i>
+                    <h5 class="margen-superior">Evaluación</h5>
+                </div>
+                <div class="col-2 bibliografia__categorias--tres center-element">
+                    <i class="fa-brands fa-searchengin fa-8x bibliografia__categorias--logo"></i>
+                    <h5 class="margen-superior">Experiencias</h5>
+                </div>
+                <div class="col-2 bibliografia__categorias--cuatro center-element">
+                    <i class="fa-brands fa-searchengin fa-8x bibliografia__categorias--logo"></i>
+                    <h5 class="margen-superior">Evaluaciones Micro</h5>
+                </div>
+                <div class="col-4 bibliografia__categorias--cinco center-element justificar-texto">
+                    <div class="row">
+                        <div class="col-4">
+                            <i class="fa-brands fa-searchengin fa-8x bibliografia__categorias--logo"></i>
+                            <h5 class="margen-superior">Evaluaciones Macro</h5>
+                        </div>
+                        <div class="col-8 bibliografia__categorias--descripcion">
+                            <p>
+                                Nunc elementum, arcu sed tempus
                 finibus, erat tellus venenatis eros, dictum efficitur odio felis at
                 massa. Vivamus sodales velit dignissim ipsum imperdiet, euismod semper
                 elit sagittis. Curabitur fringilla sapien non dignissim eleifend. Cras
-                vel laoreet leo, non egestas sapien. amet.</p>
-              <div class="center-element"> <a href="bibliocat1.html"
-                ><button class="btn biblio-btn margen-superior">Ver bibliografía</button></a
-              ></div>
-               </div>
-          </div>
-  
-          
-         
-          
+                vel laoreet leo, non egestas sapien. amet.
+                            </p>
+                            <div class="center-element">
+                                <a href="bibliocat1.html">
+                                    <button class="btn biblio-btn margen-superior">Ver bibliografía</button>
+                                </a
+              >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        <!-- Botón Agregar Bibliografía -->
+        <div class="center-element margen-inferior">
+            <button class="btn btn-warning margen-superior btn-cat-biblio" data-bs-toggle="modal" data-bs-target="#modalAgregarBibliografia">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <p style="margin-top: 0.5rem;">Agregar Bibliografía</p>
+        </div>
     </div>
-    
-
+    <!-- Form Bibliografía -->
+    <div
+        class="modal fade"
+        id="modalAgregarBibliografia"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+    >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="form-box">
+                    <div class="mb-3">
+                        <label class="form-label">Autor</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Título</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Categoría</label>
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option selected>-Seleccione categoría-</option>
+                            <option value="1">Investigación</option>
+                            <option value="2">Evaluación</option>
+                            <option value="3">Experiencias</option>
+                            <option value="4">Evaluaciones Micro</option>
+                            <option value="5">Evaluaciones Macro</option>
+                        </select>
+                    </div>
+                    <div class="center-element">
+                        <div class="casos__card--ficha">
+                            <div>
+                                <button class="btn btnAgregarArchivos" style="
+                      padding-left: 2rem;
+                      padding-right: 2rem;
+                      padding-top: 1rem;
+                      padding-bottom: 1rem;
+                    ">
+                                    <i class="fa-solid fa-download fa-2x"></i>
+                                </button>
+                                <h6 class="bold-font" style="margin-top: 0.5rem">
+                                    Subir Archivo
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center-element">
+                        <a href="eval_ejemplos.html">
+                            <button class="btn btn-inicio margen-superior margen-inferior">
+                                Solicitar Agregar Bibliografía
+                            </button>
+                        </a
+              >
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="navbar navbar-inverse navbar-fixed-bottom footer-nav">
+            <div class="container">
+                <p class="navbar-text"> © Escuela de Trabajo Social - Pontificia Universidad Católica de Chile, 2022</p>
+            </div>
+        </div>
+    </footer>
     <!-- Bootstrap JS & Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- JQuery CDN -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
 </html>

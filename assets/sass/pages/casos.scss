@@ -20,7 +20,13 @@
   margin-left: 3rem;
   margin-right: 3rem;
   margin-bottom: 1.25rem;
-  height: 75rem;
+
+  &--cuerpo {
+    border: 0.5px solid black;
+    height: 80rem;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
 }
 
 .casos__subsecciones {
@@ -43,15 +49,15 @@
 }
 
 .casos__card--ficha {
-  margin-top: 3rem;
+  margin-top: 8.5rem;
 }
 
 .casos__card--titulo-flecha {
-  text-align: right;
+  text-align: center;
 }
 
 .casos__card--video {
-  background-color: black;
+  // background-color: black;
 }
 
 .casos__subsecciones__bibliografia {

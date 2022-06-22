@@ -16,6 +16,12 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS Interno -->
     <link rel="stylesheet" href="../assets/styles.css" />
     <title>Ejemplos de Evaluación</title>
@@ -118,7 +124,18 @@
               <br />
               <br />
               <br />
-              <a href=""><p class="card__contenido--ver">Ver más</p></a>
+              <a href=""
+                ><p
+                  class="card__contenido--ver"
+                  data-bs-toggle="collapse"
+                  href="#collapseDesign1"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseDesign1"
+                >
+                  Ver más
+                </p></a
+              >
             </div>
             <div class="col-4">
               <img
@@ -126,6 +143,24 @@
                 src="https://www.educandojuntos.cl/wp-content/uploads/2016/04/colegio-san-alberto-hurtado.jpg"
                 alt=""
               />
+            </div>
+          </div>
+          <!-- _ -->
+          <div class="collapse row margen-superior" id="collapseDesign1">
+            <div class="col card__video">
+              <i
+                class="fa-solid fa-play fa-2x centrar-total card__video--flecha"
+              ></i>
+            </div>
+            <div class="col card__herramientas">
+              <h6 style="margin-top: 1rem">Audiencia de la Evaluación</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h6>Herramientas a utilizar</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                nec libero massa. Morbi efficitur quam sed diam gravida dapibus.
+                Praesent ut elit velit. Fusce porttitor velit maximus
+              </p>
             </div>
           </div>
         </li>
@@ -192,6 +227,16 @@
         >
       </ul>
     </div>
+    <footer>
+      <div class="navbar navbar-inverse navbar-fixed-bottom footer-nav">
+        <div class="container">
+          <p class="navbar-text">
+            © Escuela de Trabajo Social - Pontificia Universidad Católica de
+            Chile, 2022
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <!-- !-- Bootstrap JS & Popper -->
     <script

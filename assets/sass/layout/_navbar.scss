@@ -1,5 +1,5 @@
 .navbar-dark {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .item-margen {
@@ -16,9 +16,25 @@
     rgba(#035e7b, 1),
     rgba(#1e667e, 0.9)
   );
+  height: 3.5rem;
+  display: flex;
+
+  & a {
+    margin-top: 0.3rem;
+  }
 }
 
 .Usuario {
   margin-left: 1rem;
   margin-top: 0.3rem;
+}
+
+.footer-nav {
+  background: linear-gradient(
+    to right bottom,
+    rgba(#035e7b, 1),
+    rgba(#1e667e, 0.9)
+  );
+  color: white;
+  padding-top: 1rem;
 }

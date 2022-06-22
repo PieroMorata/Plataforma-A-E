@@ -1,0 +1,25 @@
+.form-box {
+  display: inline-block;
+
+  // margin-top: 1rem;
+  // margin-bottom: 1rem;
+  // margin-left: 25vw;
+  margin-left: -6rem;
+  color: white;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: justify;
+  background: #b64e9b;
+  background-size: contain;
+  background-position: top;
+  border-radius: 0.75rem;
+  width: 50vw;
+  height: 42rem;
+}
+
+.subir-material-casos {
+  display: flex;
+  justify-content: space-around;
+}

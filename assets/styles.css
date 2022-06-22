@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: "Lato", sans-serif; }
 
 a {
   color: inherit;
@@ -28,8 +29,21 @@ td {
 p {
   font-size: 0.95rem; }
 
+.modal-content {
+  height: 2px;
+  width: 2px; }
+
 .white-font {
   color: white; }
+
+.bold-font {
+  font-weight: bold; }
+
+.italic {
+  font-style: italic; }
+
+i {
+  font-family: "Font Awesome 6 Free"; }
 
 .center-element {
   text-align: center; }
@@ -274,6 +288,29 @@ p {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0; }
 
+.btnAgregarArchivos {
+  background: linear-gradient(to right bottom, #035e7b, rgba(19, 113, 145, 0.8));
+  text-decoration: none;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  border-radius: 0.75rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: default;
+  border: none;
+  cursor: pointer;
+  color: white; }
+  .btnAgregarArchivos:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    color: white; }
+    .btnAgregarArchivos:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
+
 .card__design {
   margin-left: 35px;
   margin-right: 35px; }
@@ -358,7 +395,7 @@ p {
     text-align: justify; }
 
 .navbar-dark {
-  font-size: 1.2rem; }
+  font-size: 1.1rem; }
 
 .item-margen {
   margin-left: 1rem; }
@@ -367,16 +404,25 @@ p {
   margin-left: 1.5rem; }
 
 .bg-navegacion {
-  background: linear-gradient(to right bottom, #035e7b, rgba(30, 102, 126, 0.9)); }
+  background: linear-gradient(to right bottom, #035e7b, rgba(30, 102, 126, 0.9));
+  height: 3.5rem;
+  display: flex; }
+  .bg-navegacion a {
+    margin-top: 0.3rem; }
 
 .Usuario {
   margin-left: 1rem;
   margin-top: 0.3rem; }
 
+.footer-nav {
+  background: linear-gradient(to right bottom, #035e7b, rgba(30, 102, 126, 0.9));
+  color: white;
+  padding-top: 1rem; }
+
 .bibliografia__categorias {
   margin-left: 4rem;
   margin-right: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   height: 40rem; }
 
 .bibliografia__categorias--descripcion {
@@ -533,8 +579,12 @@ p {
   margin-top: 1.25rem;
   margin-left: 3rem;
   margin-right: 3rem;
-  margin-bottom: 1.25rem;
-  height: 75rem; }
+  margin-bottom: 1.25rem; }
+  .casos__card--cuerpo {
+    border: 0.5px solid black;
+    height: 80rem;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px; }
 
 .casos__subsecciones {
   margin-left: 50px;
@@ -550,13 +600,10 @@ p {
   background: linear-gradient(to right bottom, #6666cc, rgba(140, 140, 201, 0.9)); }
 
 .casos__card--ficha {
-  margin-top: 3rem; }
+  margin-top: 8.5rem; }
 
 .casos__card--titulo-flecha {
-  text-align: right; }
-
-.casos__card--video {
-  background-color: black; }
+  text-align: center; }
 
 .casos__subsecciones__bibliografia {
   margin-top: 4rem; }
@@ -718,3 +765,23 @@ p {
   margin-bottom: 1.5rem;
   background-color: #8e3e78;
   background: linear-gradient(to right bottom, #8e3e78, rgba(163, 86, 141, 0.9)); }
+
+.form-box {
+  display: inline-block;
+  margin-left: -6rem;
+  color: white;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: justify;
+  background: #b64e9b;
+  background-size: contain;
+  background-position: top;
+  border-radius: 0.75rem;
+  width: 50vw;
+  height: 42rem; }
+
+.subir-material-casos {
+  display: flex;
+  justify-content: space-around; }

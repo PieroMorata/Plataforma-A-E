@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Lato", sans-serif;
 }
 
 a {
@@ -34,4 +35,9 @@ td {
 
 p {
   font-size: 0.95rem;
+}
+
+.modal-content {
+  height: 2px;
+  width: 2px;
 }
