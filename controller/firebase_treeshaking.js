@@ -1,7 +1,8 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore';
+import { getFirestore, collection, getDocs, getDoc } from 'firebase/firestore';
 
+/* #region  Inicialización de app y servicios */
 //Inicializar Firebase
 const firebaseApp = initializeApp({
   apiKey: "AIzaSyBb8okuGxQx_s33_Ue_RteDzGcyGXeHa-4",
@@ -13,9 +14,18 @@ const firebaseApp = initializeApp({
   measurementId: "G-Q30PRLWL5J"
 });
 
-// Initialize Firebase
+//Inicializar servicios a utilizar
 const auth = getAuth(firebaseApp);
 const db = getFirestore(firebaseApp);
+/* #endregion */
+
+
+/* #region  Constantes de colecciones Firestore */
+const casosCol = collection(db, "Casos");
+const bibliografiaCol = collection(db, "Bibliografía");
+const contenidosCol = collection(db, "Contenidos");
+const evaluacionesCol = collection(db, "Evaluaciones");
+/* #endregion */
 
 auth.languageCode = "es";
 export const provider = new fb_auth.GoogleAuthProvider();
@@ -31,10 +41,6 @@ onAuthStateChanged(auth, user => {
 
 
 //Autenticación
-
-
-
-
 fb_auth.signInWithRedirect(auth, provider);
 
 /**
