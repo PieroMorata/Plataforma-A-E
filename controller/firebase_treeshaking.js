@@ -20,11 +20,17 @@ const db = getFirestore(firebaseApp);
 /* #endregion */
 
 
-/* #region  Constantes de colecciones Firestore */
+/* #region  Constantes de colecciones y documentos Firestore */
 const casosCol = collection(db, "Casos");
+const casosSnapshot = await getDocs(casosCol);
 const bibliografiaCol = collection(db, "Bibliografía");
+const bibliografiaSnapshot = await getDocs(bibliografiaCol);
 const contenidosCol = collection(db, "Contenidos");
+const contenidoSnapshot = await getDocs(contenidosCol);
 const evaluacionesCol = collection(db, "Evaluaciones");
+const evaluacionesSnapshot = await getDocs(evaluacionesCol);
+const usuariosCol = collection(db, "Usuarios");
+const usuariosSnapshot = await getDocs(usuariosCol);
 /* #endregion */
 
 auth.languageCode = "es";

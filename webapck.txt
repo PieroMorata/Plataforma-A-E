@@ -1,7 +1,11 @@
 https://www.youtube.com/watch?v=rQvOAnNvcNQ
 
+Para instalar WebPack:
+    npm i webpack webpack-cli -D
+La letra "-D" indica que es una dependencia de desarrollo
+
 Para utilizar webpack:
-node_modules/.bin/webpack --entry <Ruta del archivo de inicio> -o dist
+    node_modules/.bin/webpack --entry <Ruta del archivo de inicio> -o dist
 
 El archivo de inicio es la raíz de los archivos javascript y es generalmente en donde
 se importan todas las librerías necesarias
